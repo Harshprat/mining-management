@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exchange Ores</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="manage.html">Manage Minerals</a></li>
+            <li><a href="exchange.html">Exchange Ores</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Exchange Ores</h1>
+        <form id="exchangeForm">
+            <label for="mineral1">Mineral to Exchange:</label>
+            <input type="text" id="mineral1" name="mineral1" required>
+            
+            <label for="quantity1">Quantity (tons):</label>
+            <input type="number" id="quantity1" name="quantity1" required>
+            
+            <label for="mineral2">Mineral to Receive:</label>
+            <input type="text" id="mineral2" name="mineral2" required>
+            
+            <label for="quantity2">Quantity (tons):</label>
+            <input type="number" id="quantity2" name="quantity2" required>
+            
+            <button type="submit">Exchange Minerals</button>
+        </form>
+        
+        <h2>Exchange History</h2>
+        <ul id="exchangeList"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
